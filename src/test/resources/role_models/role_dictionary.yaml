@@ -1,0 +1,10 @@
+roles:
+  - code: technical_role_alpha
+    name: Технический пользователь
+    sudirRoles:
+      - platformCode: PPRB
+        roleCode: pprbmer4gen_technical_role
+      - platformCode: EFS
+        roleCode: efs_technical_role_alpha
+    description:
+      - выполнение фоновых процессов

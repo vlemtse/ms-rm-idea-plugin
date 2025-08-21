@@ -1,0 +1,19 @@
+permissions:
+  - code: GetConsGroup
+    name: Получение консолидированной группы
+
+  - code: SearchConsGroup
+    name: Поиск консолидированных групп по параметрам
+
+permission-groups:
+  - code: clientsRead
+    name: Права на чтение в clients
+    permission-refs:
+      - GetConsGroup
+
+roles:
+  - code: technical_role_alpha
+    permission-group-refs:
+      - clientsRead
+    permission-refs:
+      - SearchConsGroup
